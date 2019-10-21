@@ -194,6 +194,7 @@ nav .links a {
   color: whitesmoke;
   font-size: 1.8rem;
   transition: 0.7s;
+  text-align: center;
 }
 nav .links a:hover {
   color: #F64C72;
@@ -206,6 +207,7 @@ nav .links .btn-big {
   transition: 0.5s;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 nav .links .btn-big:hover {
   color: #242582;
@@ -240,6 +242,7 @@ nav .links .btn-big:hover {
   color: whitesmoke;
   font-size: 1.8rem;
   transition: 0.7s;
+  text-align: center;
 }
 .jumbotron .jumbo-buttons a:hover {
   color: #F64C72;
@@ -252,6 +255,7 @@ nav .links .btn-big:hover {
   transition: 0.5s;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 .jumbotron .jumbo-buttons .btn-big:hover {
   color: #242582;
