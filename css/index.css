@@ -233,6 +233,7 @@ nav .links .btn-big:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   margin: 5%;
 }
 .jumbotron .jumbo-buttons a {
@@ -240,7 +241,6 @@ nav .links .btn-big:hover {
   color: whitesmoke;
   font-size: 1.8rem;
   transition: 0.7s;
-  align-items: center;
 }
 .jumbotron .jumbo-buttons a:hover {
   color: #F64C72;
