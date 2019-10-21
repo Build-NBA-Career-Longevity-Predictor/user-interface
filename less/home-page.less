@@ -1,0 +1,31 @@
+.boxes {
+    display: flex;
+    flex-direction: column;
+    flex-display: row;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: @main-color; 
+
+    .box1{
+        .flexbox-around();
+        background-color: @accent-color;
+    }
+
+    .box2 {
+        .flexbox-around();
+        background-color: @second-color;
+    }
+
+    .box3 {
+        .flexbox-around();
+        background-color: @accent-color;
+        }
+}
+
+
+
+
