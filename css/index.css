@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #0B0B4B;
+  background-image: linear-gradient(to bottom right, #F64C72, #242582);
 }
 h1,
 h2,
@@ -222,6 +222,7 @@ nav .links .btn-big:hover {
   border-radius: 15px;
   height: auto;
   align-items: center;
+  margin-top: 3rem;
 }
 .jumbotron .jumbo-text {
   width: 100%;
