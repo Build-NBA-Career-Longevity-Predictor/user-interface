@@ -1,0 +1,75 @@
+nav{
+    background-color: @main-color;
+    .flexbox-end();
+    padding: 2rem;
+    width: 100%;
+
+    .links{
+        width: 35%;
+        .flexbox-around();
+        align-items: center;
+        a{
+            .nav-button();
+        }//closes a
+
+        a:hover{
+            .nav-button-hover();
+        }
+
+        .btn-big{
+            .button-big();
+        }//closes btn-big
+
+        .btn-big:hover{
+            color: @main-color;
+            background-color: whitesmoke;
+        }
+    }//closes links
+}//closes nav
+
+.jumbotron{
+    .flexbox-around();
+    padding: 2.5%;
+    background-color: @second-color;
+    border-radius: 15px;
+    
+    .jumbo-text{
+        width: 100%;
+        margin: 2rem 5% 2rem 5%;
+
+        h1{
+            margin-bottom: 3rem;
+        }
+
+        p{
+            padding: 2%;
+        }
+    }
+
+    .jumbo-buttons{
+        .flexbox-around();
+        margin: 5%;
+        a{
+            .nav-button();
+            align-items: center;
+        }//closes a
+
+        a:hover{
+            .nav-button-hover();
+        }
+
+        .btn-big{
+            .button-big();
+        }//closes btn-big
+
+        .btn-big:hover{
+            color: @main-color;
+            background-color: whitesmoke;
+        }
+    }
+
+    img{
+        width: 47.5%;
+        height: auto;
+    }
+}//closes jumbotron
