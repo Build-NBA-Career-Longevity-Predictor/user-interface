@@ -32,17 +32,21 @@ nav{
     padding: 2.5%;
     background-color: @second-color;
     border-radius: 15px;
+    height: auto;
+    align-items: center;
     
     .jumbo-text{
         width: 100%;
         margin: 2rem 5% 2rem 5%;
+        padding: 2%;
 
         h1{
             margin-bottom: 3rem;
+            text-align: left;
         }
 
         p{
-            padding: 2%;
+            text-align: left;
         }
     }
 
@@ -52,19 +56,23 @@ nav{
         margin: 5%;
         a{
             .nav-button();
+            font-size: 1.8rem;
         }//closes a
 
         a:hover{
             .nav-button-hover();
+            font-size: 1.8rem;
         }
 
         .btn-big{
             .button-big();
+            font-size: 2rem;
         }//closes btn-big
 
         .btn-big:hover{
             color: @main-color;
             background-color: whitesmoke;
+            font-size: 2.4rem;
         }
     }
 
