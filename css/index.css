@@ -247,6 +247,7 @@ nav .links .btn-big:hover {
   color: whitesmoke;
   font-size: 1.4rem;
   transition: 0.7s;
+  text-align: center;
   font-size: 1.8rem;
 }
 .jumbotron .jumbo-buttons a:hover {
@@ -267,7 +268,7 @@ nav .links .btn-big:hover {
 .jumbotron .jumbo-buttons .btn-big:hover {
   color: #242582;
   background-color: whitesmoke;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 .jumbotron img {
   width: 47.5%;
