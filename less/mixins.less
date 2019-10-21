@@ -1,0 +1,38 @@
+// Button mixins
+.nav-button(){
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    transition: 0.7s;
+}
+
+.nav-button-hover(){
+    color: @accent-color;
+}
+
+.button-big(){
+    border: solid 1px @accent-color;
+    border-radius: 5px;
+    background-color: @accent-color;
+    color: whitesmoke;
+    transition: 0.5s;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+// flex mixins
+.flexbox-around(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flexbox-column(){
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox-end(){
+    display: flex;
+    justify-content: flex-end;
+}
