@@ -1,8 +1,9 @@
 .boxes {
     display: flex;
     flex-direction: column;
+    flex-display: row;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     padding: 2rem;
     border: 1px solid red;
     flex-wrap: wrap;
@@ -10,32 +11,19 @@
     background-color: @main-color; 
 
     .box1{
-
-            flex-direction: row;
-    
-            .app-Explanation {
-            background-color: @accent-color;
-            width: 40%;
-        }
-
+        .flexbox-around();
+        background-color: @accent-color;
     }
 
     .box2 {
-   
-
-        .aboutLink {
-            background-color: @second-color;
-        }
+        .flexbox-around();
+        background-color: @second-color;
     }
 
     .box3 {
-        flex-direction: row;
-
-        .teamLink {
-            background-color: @accent-color;
-          
+        .flexbox-around();
+        background-color: @accent-color;
         }
-    }
 }
 
 
