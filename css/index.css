@@ -388,11 +388,13 @@ nav .links .btn-big:hover {
 @media (max-width: 800px) {
   .boxes .box1 {
     width: 48%;
+    margin: 2rem auto;
   }
 }
 @media (max-width: 500px) {
   .boxes .box1 {
     width: 100%;
+    margin: 2rem auto;
   }
 }
 .boxes .box1 .btn-1 {
@@ -458,6 +460,18 @@ nav .links .btn-big:hover {
 .boxes .box3 .btn-2:hover {
   color: #242582;
   background-color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  .boxes .box3 {
+    width: 48%;
+    margin: 2rem auto;
+  }
+}
+@media (max-width: 500px) {
+  .boxes .box3 {
+    width: 100%;
+    margin: 2rem auto;
+  }
 }
 .teams {
   display: flex;
