@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: linear-gradient(to bottom right, #F64C72, #242582);
+  background-image: linear-gradient(to bottom, #242582, grey);
 }
 h1,
 h2,
@@ -197,21 +197,22 @@ nav .links a {
   text-align: center;
 }
 nav .links a:hover {
-  color: #F64C72;
+  color: #C9082A;
 }
 nav .links .btn-big {
-  border: solid 1px #F64C72;
+  border: solid 1px #C9082A;
   border-radius: 5px;
-  background-color: #F64C72;
+  background-color: #C9082A;
   color: whitesmoke;
   transition: 0.5s;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  text-decoration: none;
 }
 nav .links .btn-big:hover {
   color: #242582;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 .jumbotron {
   display: flex;
@@ -223,6 +224,7 @@ nav .links .btn-big:hover {
   height: auto;
   align-items: center;
   margin-top: 3rem;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
 .jumbotron .jumbo-text {
   width: 100%;
@@ -252,23 +254,24 @@ nav .links .btn-big:hover {
   font-size: 1.8rem;
 }
 .jumbotron .jumbo-buttons a:hover {
-  color: #F64C72;
+  color: #C9082A;
   font-size: 1.8rem;
 }
 .jumbotron .jumbo-buttons .btn-big {
-  border: solid 1px #F64C72;
+  border: solid 1px #C9082A;
   border-radius: 5px;
-  background-color: #F64C72;
+  background-color: #C9082A;
   color: whitesmoke;
   transition: 0.5s;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  text-decoration: none;
   font-size: 2rem;
 }
 .jumbotron .jumbo-buttons .btn-big:hover {
   color: #242582;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   font-size: 2rem;
 }
 .jumbotron img {
@@ -280,10 +283,9 @@ nav .links .btn-big:hover {
   flex-direction: row;
   flex: 33.33%;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 90%;
   padding: 2rem;
-  background-color: #242582;
   border-radius: 14px;
 }
 .boxes .appExplanation {
@@ -292,36 +294,27 @@ nav .links .btn-big:hover {
   align-items: center;
 }
 .boxes .box1 {
-  background-color: #F64C72;
+  background-color: #C9082A;
   width: 25%;
   align-content: center;
   padding: 2% 2%;
   border-radius: 14px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
 .boxes .box1 .btn-1 {
-  border: solid 1px #F64C72;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: solid 1px #242582;
   border-radius: 5px;
-  background-color: #F64C72;
+  background-color: #242582;
   color: whitesmoke;
   transition: 0.5s;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  margin: 5% 0% 50%;
-  align-items: center;
-  margin: 5%;
-  color: #242582;
-  background-color: whitesmoke;
+  text-decoration: none;
   font-size: 2rem;
-  margin: 10% 0% 50%;
-}
-.boxes .box1 .btn-1 a:hover {
-  color: #F64C72;
-  font-size: 1.8rem;
 }
 .boxes .box2 {
   background-color: #7979E3;
@@ -329,36 +322,28 @@ nav .links .btn-big:hover {
   align-content: center;
   padding: 2% 2%;
   border-radius: 14px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
 .boxes .box3 {
-  background-color: #F64C72;
+  background-color: #C9082A;
   width: 25%;
   align-content: center;
   padding: 2% 2%;
   border-radius: 14px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
 .boxes .box3 .btn-2 {
-  border: solid 1px #F64C72;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: solid 1px #242582;
   border-radius: 5px;
-  background-color: #F64C72;
+  background-color: #242582;
   color: whitesmoke;
   transition: 0.5s;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  margin: 5% 0% 50%;
-  align-items: center;
-  margin: 5%;
-  color: #242582;
-  background-color: whitesmoke;
+  text-decoration: none;
   font-size: 2rem;
-  margin: 10% 0% 50%;
-}
-.boxes .box3 .btn-2 a:hover {
-  color: #F64C72;
-  font-size: 1.8rem;
 }
