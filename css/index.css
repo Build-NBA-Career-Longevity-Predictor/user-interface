@@ -224,7 +224,7 @@ nav .links .btn-big:hover {
   flex-direction: row;
   justify-content: space-around;
   padding: 2.5%;
-  background-color: #7979E3;
+  background-color: #FFFFFF;
   border-radius: 15px;
   height: auto;
   align-items: center;
@@ -248,26 +248,27 @@ nav .links .btn-big:hover {
 .jumbotron .jumbo-text p {
   text-align: left;
 }
-.jumbo-buttons {
+.jumbotron .jumbo-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 5%;
 }
-.jumbo-buttons a {
+.jumbotron .jumbo-buttons a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.4rem;
   transition: 0.7s;
   text-align: center;
+  color: #242582;
   font-size: 1.8rem;
 }
-.jumbo-buttons a:hover {
+.jumbotron .jumbo-buttons a:hover {
   color: #C9082A;
   font-size: 1.8rem;
 }
-.jumbo-buttons .btn-big {
+.jumbotron .jumbo-buttons .btn-big {
   border: solid 1px #C9082A;
   border-radius: 5px;
   background-color: #C9082A;
@@ -279,14 +280,61 @@ nav .links .btn-big:hover {
   text-decoration: none;
   font-size: 2rem;
 }
-.jumbo-buttons .btn-big:hover {
+.jumbotron .jumbo-buttons .btn-big:hover {
   color: #242582;
   background-color: #f5f5f5;
   font-size: 2rem;
 }
-img {
+.jumbotron img {
   width: 47.5%;
   height: auto;
+}
+.bg-img {
+  background-image: url("../images/crowd.jpg");
+  background-color: #CCCCCC;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 3rem;
+}
+.team-text h1 {
+  color: #FFFFFF;
+  font-size: 10rem;
+  margin: 2rem;
+}
+.team-text h3 {
+  margin: 3rem 0;
+  color: #FFFFFF;
+  font-size: 4rem;
+}
+.team-text a {
+  border: solid 1px #C9082A;
+  border-radius: 5px;
+  background-color: #C9082A;
+  color: whitesmoke;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 2rem;
+  margin: 1rem;
+}
+.team-text a:hover {
+  color: #242582;
+  background-color: #f5f5f5;
 }
 .boxes {
   display: flex;
@@ -329,7 +377,7 @@ img {
     margin-bottom: 8%;
   }
 }
-.box1 {
+.boxes .box1 {
   background-color: #C9082A;
   width: 25%;
   align-content: center;
@@ -338,16 +386,16 @@ img {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
 @media (max-width: 800px) {
-  .box1 {
+  .boxes .box1 {
     width: 48%;
   }
 }
 @media (max-width: 500px) {
-  .box1 {
+  .boxes .box1 {
     width: 100%;
   }
 }
-.box1 .btn-1 {
+.boxes .box1 .btn-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -362,8 +410,12 @@ img {
   text-decoration: none;
   font-size: 2rem;
 }
-.box2 {
-  background-color: #7979E3;
+.boxes .box1 .btn-1:hover {
+  color: #242582;
+  background-color: #FFFFFF;
+}
+.boxes .box2 {
+  background-color: #FFFFFF;
   width: 25%;
   align-content: center;
   padding: 2% 2%;
@@ -371,16 +423,16 @@ img {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
 @media (max-width: 500px) {
-  .box2 {
+  .boxes .box2 {
     display: none;
   }
 }
 @media (max-width: 800px) {
-  .box2 {
+  .boxes .box2 {
     display: none;
   }
 }
-.box3 {
+.boxes .box3 {
   background-color: #C9082A;
   width: 25%;
   align-content: center;
@@ -388,7 +440,7 @@ img {
   border-radius: 14px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
-.box3 .btn-2 {
+.boxes .box3 .btn-2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -403,18 +455,80 @@ img {
   text-decoration: none;
   font-size: 2rem;
 }
+.boxes .box3 .btn-2:hover {
+  color: #242582;
+  background-color: #FFFFFF;
+}
+.teams {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.teams #lead {
+  display: flex;
+  flex-direction: column;
+}
+.teams #backend {
+  display: flex;
+  flex-direction: column;
+}
+.teams #ds {
+  display: flex;
+  flex-direction: column;
+}
+.teams #react {
+  display: flex;
+  flex-direction: column;
+}
+.teams #ui {
+  display: flex;
+  flex-direction: column;
+}
+.teams .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.5rem 3rem 3rem 3rem;
+}
+.teams .card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 0 2rem;
+}
+.teams .card img {
+  width: 20rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
 @media (max-width: 800px) {
-  .box3 {
+  .teams .card img {
     width: 48%;
   }
 }
 @media (max-width: 500px) {
-  .box3 {
+  .teams .card img {
     width: 100%;
     margin-top: 10%;
   }
 }
-.basket {
+.teams .card img a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  transition: 0.7s;
+  text-align: center;
+  color: #C9082A;
+}
+.teams .card img a:hover {
+  color: #242582;
+}
+.teams .card h2 {
+  color: white;
+  margin: 5rem 0 0 0;
+}
+.teams .card .basket {
   display: flex;
   align-items: center;
   margin: 0 auto;
