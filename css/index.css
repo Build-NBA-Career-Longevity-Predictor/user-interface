@@ -385,6 +385,10 @@ nav .links .btn-big:hover {
   border-radius: 14px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
+.boxes .box1 img {
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
 @media (max-width: 800px) {
   .boxes .box1 {
     width: 48%;
@@ -424,6 +428,10 @@ nav .links .btn-big:hover {
   border-radius: 14px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
 }
+.boxes .box2 img {
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
 @media (max-width: 500px) {
   .boxes .box2 {
     display: none;
@@ -441,6 +449,10 @@ nav .links .btn-big:hover {
   padding: 2% 2%;
   border-radius: 14px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
+}
+.boxes .box3 img {
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 .boxes .box3 .btn-2 {
   display: flex;
