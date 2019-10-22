@@ -1,20 +1,43 @@
 nav{
     background-color: @main-color;
-    .flexbox-end();
-    padding: 2rem;
+    .flexbox-between();
+    padding: 1rem;
     width: 100%;
+    margin: 0 5%;
 
-    .links{
-        width: 35%;
-        .flexbox-around();
-        align-items: center;
-
-        @media @mobile {
-            width: 100%;
-        }//nav bar media querie
+    .logo{
+        display: flex;
+        justify-content: flex-start;
 
         a{
             .nav-button();
+            color: @accent-color;
+            font-size: 4rem;
+        }
+
+        a:hover{
+            color: @second-color;
+        }
+    }
+
+    .links{
+        width: 35%;
+        .flexbox-end();
+        align-items: center;
+        margin: 0 10%;
+
+        @media @tablet{
+            width: 80%;
+        }
+
+        @media @mobile {
+            width: 100%;
+        }//nav bar media query
+
+
+        a{
+            .nav-button();
+            margin: auto;
         }//closes a
 
         a:hover{
@@ -41,9 +64,11 @@ nav{
     align-items: center;
     margin-top: 3rem;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
+    
     @media @mobile {
         flex-direction: column;
     }
+
     .jumbo-text{
         width: 100%;
         margin: 2rem 5% 2rem 5%;
@@ -101,6 +126,16 @@ nav{
     background-repeat: no-repeat; 
     background-size: cover;
 
+    @media @tablet {
+        height: 60vh;
+    }
+
+    @media @mobile {
+        background-color: rgba(0, 0, 0, 0.0);
+        background-image: none;
+        height: 23.5vh;
+    }
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,17 +148,61 @@ nav{
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 3rem;
+    height: auto;
+
+    @media @mobile {
+        padding: 0;
+        margin: 0;
+    }
+
+    @media @tablet {
+        padding: 0;
+        margin: 0;
+    }
+
 
     h1{
         color: @second-color;
         font-size: 10rem;
         margin: 2rem;
+        
+        @media @tablet {
+            font-size: 5rem
+        }
+        
+        @media @mobile {
+            font-size: 3rem;
+        }
+
+       
     }
 
     h3{
         margin: 3rem 0;
         color: @second-color;
         font-size: 4rem;
+
+        @media @tablet {
+            font-size: 2rem;
+        }
+
+        @media @mobile {
+            font-size: 1.3rem;
+        }
+
+    }
+
+    .team-select{
+        .flexbox-around;
+
+        @media @tablet {
+            flex-wrap: wrap;
+        }
+
+        @media @mobile {
+            flex-direction: column;
+        }
+
     }
 
     a{
@@ -131,6 +210,16 @@ nav{
         padding: 1rem;
         font-size: 2rem;
         margin: 1rem;
+
+        @media @tablet {
+            font-size: 1.4rem;
+            margin: 0.5rem;
+        }
+
+        @media @mobile {
+            display: none;
+        }
+
     }
     a:hover{
         color: @main-color;
