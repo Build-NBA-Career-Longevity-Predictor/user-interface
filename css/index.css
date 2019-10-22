@@ -189,6 +189,11 @@ nav .links {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  nav .links {
+    width: 100%;
+  }
+}
 nav .links a {
   text-decoration: none;
   color: whitesmoke;
@@ -225,6 +230,11 @@ nav .links .btn-big:hover {
   align-items: center;
   margin-top: 3rem;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
+}
+@media (max-width: 500px) {
+  .jumbotron {
+    flex-direction: column;
+  }
 }
 .jumbotron .jumbo-text {
   width: 100%;
@@ -336,10 +346,36 @@ nav .links .btn-big:hover {
   padding: 2rem;
   border-radius: 14px;
 }
+@media (max-width: 500px) {
+  .boxes {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .boxes .appExplanation {
-  align-content: center;
-  margin: 10% 0% 5%;
-  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .boxes .appExplanation {
+    margin: 2%;
+  }
+}
+.boxes .appExplanation2 {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .boxes .appExplanation2 {
+    margin: 2%;
+  }
+}
+@media (max-width: 800px) {
+  .boxes .appExplanation2 {
+    margin-bottom: 8%;
+  }
 }
 .boxes .box1 {
   background-color: #C9082A;
@@ -348,6 +384,16 @@ nav .links .btn-big:hover {
   padding: 2% 2%;
   border-radius: 14px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
+}
+@media (max-width: 800px) {
+  .boxes .box1 {
+    width: 48%;
+  }
+}
+@media (max-width: 500px) {
+  .boxes .box1 {
+    width: 100%;
+  }
 }
 .boxes .box1 .btn-1 {
   display: flex;
@@ -375,6 +421,16 @@ nav .links .btn-big:hover {
   padding: 2% 2%;
   border-radius: 14px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.33);
+}
+@media (max-width: 500px) {
+  .boxes .box2 {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .boxes .box2 {
+    display: none;
+  }
 }
 .boxes .box3 {
   background-color: #C9082A;
@@ -446,7 +502,18 @@ nav .links .btn-big:hover {
   border-radius: 25px;
   margin-bottom: 1rem;
 }
-.teams .card a {
+@media (max-width: 800px) {
+  .teams .card img {
+    width: 48%;
+  }
+}
+@media (max-width: 500px) {
+  .teams .card img {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+.teams .card img a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.4rem;
@@ -454,10 +521,16 @@ nav .links .btn-big:hover {
   text-align: center;
   color: #C9082A;
 }
-.teams .card a:hover {
+.teams .card img a:hover {
   color: #242582;
 }
-.teams h2 {
+.teams .card h2 {
   color: white;
   margin: 5rem 0 0 0;
+}
+.teams .card .basket {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2%;
 }
