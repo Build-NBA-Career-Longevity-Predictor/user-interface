@@ -178,16 +178,38 @@ img {
 nav {
   background-color: #242582;
   display: flex;
-  justify-content: flex-end;
-  padding: 2rem;
+  justify-content: space-between;
+  padding: 1rem;
   width: 100%;
+  margin: 0 5%;
+}
+nav .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+nav .logo a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  transition: 0.7s;
+  text-align: center;
+  color: #C9082A;
+  font-size: 4rem;
+}
+nav .logo a:hover {
+  color: #FFFFFF;
 }
 nav .links {
   width: 35%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+  margin: 0 10%;
+}
+@media (max-width: 800px) {
+  nav .links {
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
   nav .links {
@@ -200,6 +222,7 @@ nav .links a {
   font-size: 1.4rem;
   transition: 0.7s;
   text-align: center;
+  margin: auto;
 }
 nav .links a:hover {
   color: #C9082A;
@@ -300,6 +323,18 @@ nav .links .btn-big:hover {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .bg-img {
+    height: 60vh;
+  }
+}
+@media (max-width: 500px) {
+  .bg-img {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    height: 23.5vh;
+  }
+}
 .team-text {
   display: flex;
   flex-direction: column;
@@ -308,16 +343,64 @@ nav .links .btn-big:hover {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 3rem;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .team-text {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 800px) {
+  .team-text {
+    padding: 0;
+    margin: 0;
+  }
 }
 .team-text h1 {
   color: #FFFFFF;
   font-size: 10rem;
   margin: 2rem;
 }
+@media (max-width: 800px) {
+  .team-text h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .team-text h1 {
+    font-size: 3rem;
+  }
+}
 .team-text h3 {
   margin: 3rem 0;
   color: #FFFFFF;
   font-size: 4rem;
+}
+@media (max-width: 800px) {
+  .team-text h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .team-text h3 {
+    font-size: 1.3rem;
+  }
+}
+.team-text .team-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .team-text .team-select {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .team-text .team-select {
+    flex-direction: column;
+  }
 }
 .team-text a {
   border: solid 1px #C9082A;
@@ -331,6 +414,17 @@ nav .links .btn-big:hover {
   padding: 1rem;
   font-size: 2rem;
   margin: 1rem;
+}
+@media (max-width: 800px) {
+  .team-text a {
+    font-size: 1.4rem;
+    margin: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .team-text a {
+    display: none;
+  }
 }
 .team-text a:hover {
   color: #242582;
@@ -490,6 +584,7 @@ nav .links .btn-big:hover {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 .teams #lead {
   display: flex;
@@ -514,32 +609,41 @@ nav .links .btn-big:hover {
 .teams .cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 1.5rem 3rem 3rem 3rem;
+  justify-content: center;
+  margin: 3rem auto;
+  width: 100%;
+  border: 1px solid red;
+}
+@media (max-width: 500px) {
+  .teams .cards {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .teams .card {
   background-color: whitesmoke;
   border-radius: 10px;
   padding: 2rem;
   margin: 0 2rem;
+  width: auto;
+}
+@media (max-width: 500px) {
+  .teams .card {
+    width: 90%;
+    margin: 1rem auto;
+  }
 }
 .teams .card img {
   width: 20rem;
   border-radius: 25px;
   margin-bottom: 1rem;
 }
-@media (max-width: 800px) {
-  .teams .card img {
-    width: 48%;
-  }
-}
 @media (max-width: 500px) {
   .teams .card img {
-    width: 100%;
-    margin-top: 10%;
+    display: none;
   }
 }
-.teams .card img a {
+.teams .card a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.4rem;
@@ -547,14 +651,14 @@ nav .links .btn-big:hover {
   text-align: center;
   color: #C9082A;
 }
-.teams .card img a:hover {
+.teams .card a:hover {
   color: #242582;
 }
-.teams .card h2 {
+.teams h2 {
   color: white;
   margin: 5rem 0 0 0;
 }
-.teams .card .basket {
+.teams .basket {
   display: flex;
   align-items: center;
   margin: 0 auto;
