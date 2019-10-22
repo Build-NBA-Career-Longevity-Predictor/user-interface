@@ -1,31 +1,45 @@
 .boxes {
     display: flex;
-    flex-direction: column;
-    flex-display: row;
+    flex-direction: row;
+    flex: 33.33%;
+    justify-content: space-around;
     margin: 0 auto;
-    width: 80%;
+    max-width: 90%;
     padding: 2rem;
-    border: 1px solid red;
-    flex-wrap: wrap;
-    flex: 1;
     background-color: @main-color; 
+    border-radius: 14px;
+
+    .appExplanation {
+        align-content: center;
+        margin: 10% 0% 5%;
+        align-items: center;
+    }
 
     .box1{
-        .flexbox-around();
         background-color: @accent-color;
-    }
+        .box();
 
-    .box2 {
-        .flexbox-around();
-        background-color: @second-color;
+        .btn-1{
+            .button-big();
+            .flexbox-around();
+            .btn-about();
     }
-
-    .box3 {
-        .flexbox-around();
-        background-color: @accent-color;
-        }
 }
 
+    .box2 {
+        background-color: @second-color;
+        .box();
+    }
 
 
+    .box3 {     
+        background-color: @accent-color;
+        .box();
 
+        .btn-2{
+            .button-big();
+            .flexbox-around();
+            .btn-about();
+        }
+    }
+}
