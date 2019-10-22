@@ -276,31 +276,88 @@ nav .links .btn-big:hover {
 }
 .boxes {
   display: flex;
-  flex-direction: column;
-  flex-display: row;
+  flex-direction: row;
+  flex: 33.33%;
+  justify-content: space-around;
   margin: 0 auto;
-  width: 80%;
+  max-width: 90%;
   padding: 2rem;
-  border: 1px solid red;
-  flex-wrap: wrap;
-  flex: 1;
   background-color: #242582;
+  border-radius: 14px;
+}
+.boxes .appExplanation {
+  align-content: center;
+  margin: 10% 0% 5%;
+  align-items: center;
 }
 .boxes .box1 {
+  background-color: #F64C72;
+  width: 25%;
+  align-content: center;
+  padding: 2% 2%;
+  border-radius: 14px;
+}
+.boxes .box1 .btn-1 {
+  border: solid 1px #F64C72;
+  border-radius: 5px;
+  background-color: #F64C72;
+  color: whitesmoke;
+  transition: 0.5s;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #F64C72;
+  align-content: center;
+  margin: 5% 0% 50%;
+  align-items: center;
+  margin: 5%;
+  color: #242582;
+  background-color: whitesmoke;
+  font-size: 2rem;
+  margin: 10% 0% 50%;
+}
+.boxes .box1 .btn-1 a:hover {
+  color: #F64C72;
+  font-size: 1.8rem;
 }
 .boxes .box2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   background-color: #7979E3;
+  width: 25%;
+  align-content: center;
+  padding: 2% 2%;
+  border-radius: 14px;
 }
 .boxes .box3 {
+  background-color: #F64C72;
+  width: 25%;
+  align-content: center;
+  padding: 2% 2%;
+  border-radius: 14px;
+}
+.boxes .box3 .btn-2 {
+  border: solid 1px #F64C72;
+  border-radius: 5px;
+  background-color: #F64C72;
+  color: whitesmoke;
+  transition: 0.5s;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #F64C72;
+  align-content: center;
+  margin: 5% 0% 50%;
+  align-items: center;
+  margin: 5%;
+  color: #242582;
+  background-color: whitesmoke;
+  font-size: 2rem;
+  margin: 10% 0% 50%;
+}
+.boxes .box3 .btn-2 a:hover {
+  color: #F64C72;
+  font-size: 1.8rem;
 }

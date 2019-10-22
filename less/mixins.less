@@ -31,10 +31,35 @@
 
 .flexbox-column(){
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .flexbox-end(){
     display: flex;
     justify-content: flex-end;
+}
+
+// about boxes mix-ins  
+.btn-about(){
+    align-content: center;
+    margin: 5% 0% 50%;
+    align-items: center;
+    margin: 5%;
+    font-size: 2rem;
+    color: @main-color;
+    background-color: whitesmoke;
+    font-size: 2rem;
+    margin: 10% 0% 50%;
+
+    a:hover{
+        .nav-button-hover();
+        font-size: 1.8rem;
+    }
+}
+
+.box(){
+    width: 25%;
+    align-content: center;
+    padding: 2% 2%;
+    border-radius: 14px;
 }
