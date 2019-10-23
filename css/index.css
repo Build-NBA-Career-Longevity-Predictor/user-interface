@@ -430,6 +430,21 @@ nav .links .btn-big:hover {
   color: #242582;
   background-color: #f5f5f5;
 }
+.copyright {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 2%;
+  font-size: 5rem;
+  color: #FFFFFF;
+}
+.label {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: auto;
+}
 .boxes {
   display: flex;
   flex-direction: row;
